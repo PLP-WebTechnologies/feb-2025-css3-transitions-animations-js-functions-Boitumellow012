@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Fun Zone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fredoka+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="theme-toggle-container">
+        <button id="theme-toggle" class="theme-btn">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <header>
+        <h1>🌈 Kids Fun Zone 🎉</h1>
+        <p>Where learning meets play!</p>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <div class="welcome-animation">
+                <div class="bouncing-ball"></div>
+                <div class="floating-cloud"></div>
+            </div>
+            <div class="welcome-content">
+                <h2>Welcome, <span id="kid-name">Friend</span>!</h2>
+                <div class="name-form">
+                    <input type="text" id="name-input" placeholder="What's your name?">
+                    <button id="save-name">Save</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive-toys">
+            <h2>Play with Me!</h2>
+            <div class="toys-container">
+                <div class="toy" id="bubble-toy">
+                    <div class="toy-icon"><i class="fas fa-water"></i></div>
+                    <h3>Bubble Blower</h3>
+                    <button class="play-btn">Pop Bubbles!</button>
+                </div>
+
+                <div class="toy" id="drum-toy">
+                    <div class="toy-icon"><i class="fas fa-drum"></i></div>
+                    <h3>Drum Kit</h3>
+                    <button class="play-btn">Make Music!</button>
+                </div>
+
+                <div class="toy" id="rocket-toy">
+                    <div class="toy-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Space Rocket</h3>
+                    <button class="play-btn">Launch Rocket!</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="drawing-section">
+            <h2>Colorful Drawing</h2>
+            <div class="drawing-area" id="drawing-canvas"></div>
+            <div class="color-picker">
+                <button class="color-btn" data-color="red"></button>
+                <button class="color-btn" data-color="blue"></button>
+                <button class="color-btn" data-color="green"></button>
+                <button class="color-btn" data-color="yellow"></button>
+                <button class="color-btn" data-color="purple"></button>
+                <button id="clear-drawing">Clear</button>
+            </div>
+        </section>
+
+        <div class="confetti-container" id="confetti"></div>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ for kids everywhere!</p>
+    </footer>
+
+    <audio id="bubble-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-bubble-pop-with-delay-2357.mp3"></audio>
+    <audio id="drum-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-drum-bass-hit-2294.mp3"></audio>
+    <audio id="rocket-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-space-robot-laser-shot-1681.mp3"></audio>
+    <audio id="success-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
