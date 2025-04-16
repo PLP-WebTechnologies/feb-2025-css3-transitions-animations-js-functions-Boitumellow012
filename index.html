@@ -44,13 +44,27 @@
                 <div class="toy" id="bubble-toy">
                     <div class="toy-icon"><i class="fas fa-water"></i></div>
                     <h3>Bubble Blower</h3>
-                    <button class="play-btn">Pop Bubbles!</button>
+                    <button class="play-btn" id="bubble-btn">Blow Bubbles!</button>
+                    <button class="stop-btn" id="stop-bubbles">Stop Bubbles</button>
+                    <div class="bubble-container"></div>
                 </div>
 
                 <div class="toy" id="drum-toy">
                     <div class="toy-icon"><i class="fas fa-drum"></i></div>
                     <h3>Drum Kit</h3>
-                    <button class="play-btn">Make Music!</button>
+                    <div class="drum-pad-container">
+                        <button class="drum-pad" data-sound="kick">Kick</button>
+                        <button class="drum-pad" data-sound="snare">Snare</button>
+                        <button class="drum-pad" data-sound="hihat">Hi-Hat</button>
+                        <button class="drum-pad" data-sound="cymbal">Cymbal</button>
+                    </div>
+                    <div class="drum-controls">
+                        <button id="record-drum">Record</button>
+                        <button id="play-drum" disabled>Play</button>
+                        <button id="save-drum" disabled>Save</button>
+                        <button id="clear-drum" disabled>Clear</button>
+                    </div>
+                    <div class="saved-beats"></div>
                 </div>
 
                 <div class="toy" id="rocket-toy">
@@ -81,11 +95,15 @@
         <p>Made with ❤️ for kids everywhere!</p>
     </footer>
 
-    <audio id="bubble-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-bubble-pop-with-delay-2357.mp3"></audio>
-    <audio id="drum-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-drum-bass-hit-2294.mp3"></audio>
-    <audio id="rocket-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-space-robot-laser-shot-1681.mp3"></audio>
-    <audio id="success-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3"></audio>
-
+    <audio id="bubble-sound" src="sounds/bubbleSound.wav"></audio>
+    <audio id="drum-sound" src="sounds/drumSound.wav"></audio>
+    <audio id="rocket-sound" src="sounds/rocketLaunch.wav"></audio>
+    <audio id="success-sound" src="sounds/successSound.wav"></audio>
+    
+    <audio id="kick-sound" src="sounds/kickSound.wav"></audio>
+<audio id="snare-sound" src="sounds/snareSound.wav"></audio>
+<audio id="hihat-sound" src="sounds/hihatSound.wav"></audio>
+<audio id="cymbal-sound" src="sounds/cymbalSound.wav"></audio>
     <script src="script.js"></script>
 </body>
 </html>
